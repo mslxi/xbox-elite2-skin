@@ -63,14 +63,30 @@ do so via my paypal: https://paypal.me/mrmcpowned
   left: 129px;
   top: -80px;
 }
-.controller.custom.active:not(.disconnected) .triggers {
+.controller.custom:not(.disconnected) .triggers {
   display: block !important;
+}
+.controller.custom:not(.disconnected) .triggers::before,
+.controller.custom:not(.disconnected) .triggers::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 86px;
+  height: 95px;
+  opacity: 1;
+}
+.controller.custom:not(.disconnected) .triggers::before {
+  left: 0;
+  background: url(elite2-assets/Trigger%20Left.png);
+}
+.controller.custom:not(.disconnected) .triggers::after {
+  right: 0;
+  background: url(elite2-assets/Trigger%20Right.png);
 }
 .custom .trigger {
   /* These are the actual triggers themselves */
   width: 86px;
   height: 95px;
-  opacity: 1 !important;
 }
 /* The left and right classes below are used to position the triggers
 within the div they're contained in. Since their positions is realtive
