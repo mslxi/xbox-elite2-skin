@@ -67,6 +67,7 @@ do so via my paypal: https://paypal.me/mrmcpowned
   /* These are the actual triggers themselves */
   width: 86px;
   height: 95px;
+  opacity: 1 !important;
 }
 /* The left and right classes below are used to position the triggers
 within the div they're contained in. Since their positions is realtive
