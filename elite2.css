@@ -71,17 +71,18 @@ do so via my paypal: https://paypal.me/mrmcpowned
   content: "";
   position: absolute;
   display: block;
+  top: 0;
   width: 86px;
   height: 95px;
   opacity: 1;
 }
 .controller.custom:not(.disconnected) .triggers::before {
   left: 0;
-  background: url(elite2-assets/Trigger%20Left.png);
+  background: url(elite2-assets/Trigger%20Left.png) no-repeat;
 }
 .controller.custom:not(.disconnected) .triggers::after {
   right: 0;
-  background: url(elite2-assets/Trigger%20Right.png);
+  background: url(elite2-assets/Trigger%20Right.png) no-repeat;
 }
 .custom .trigger {
   /* These are the actual triggers themselves */
