@@ -74,7 +74,9 @@ do so via my paypal: https://paypal.me/mrmcpowned
   top: 0;
   width: 86px;
   height: 95px;
-  opacity: 1;
+  opacity: 0.35;
+  pointer-events: none;
+  z-index: 0;
 }
 .controller.custom:not(.disconnected) .triggers::before {
   left: 0;
@@ -88,6 +90,8 @@ do so via my paypal: https://paypal.me/mrmcpowned
   /* These are the actual triggers themselves */
   width: 86px;
   height: 95px;
+  position: relative;
+  z-index: 1;
 }
 /* The left and right classes below are used to position the triggers
 within the div they're contained in. Since their positions is realtive
