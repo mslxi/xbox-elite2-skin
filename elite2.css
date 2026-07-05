@@ -63,6 +63,9 @@ do so via my paypal: https://paypal.me/mrmcpowned
   left: 129px;
   top: -80px;
 }
+.controller.custom.active:not(.disconnected) .triggers {
+  display: block !important;
+}
 .custom .trigger {
   /* These are the actual triggers themselves */
   width: 86px;
